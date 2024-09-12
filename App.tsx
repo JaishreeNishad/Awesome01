@@ -1,16 +1,18 @@
-
-
 import React from 'react';
-import { Text, View,SafeAreaView} from 'react-native';
+import {SafeAreaView, ScrollView} from 'react-native';
+import FlatCards from './components/FlatCards';
+// import DraggableDiv from './components/DraggableDiv';
 
-function App(){
-  return(
+function App() {
+  return (
     <SafeAreaView>
-      <View>
-        <Text>Hello World!</Text>
-      </View>
+      <ScrollView>
+        {/* <DraggableDiv /> */}
+
+        <FlatCards />
+      </ScrollView>
     </SafeAreaView>
-  )
+  );
 }
 
 export default App;
